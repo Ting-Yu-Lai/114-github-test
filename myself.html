@@ -6,21 +6,87 @@
     <title>Myself</title>
 </head>
 <style>
+    :root {
+        --global-welcome-heaadrt-offset: 80px;
+        --global-welcome-heaadrt-col-gap: 80px;
+    }
+
+    .header-createdate-bar {
+        padding: 3px ;
+        background-color:lightgray;
+    }
+
+    .footer-bar {
+        padding: 3px;
+        background-color: lightgray;
+        text-align: center;
+    }
+
+    .large-centered {
+        text-align: center;
+    }
+
+    .introducemyselfboder {
+        margin: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .introducemyslefboder1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .photoview {
+        width:100%;
+        display: block;
+        transition: all 0.3s ease;
+        transform: scale(0.98);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .photoview img {
+        max-width: 100%;
+        height: auto;
+        transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 102px;
+    }
+
+    .myphoto:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
     .mytable {
         text-align: center;
         margin: auto;
     }
-    .myh1 { 
-        text-align: center;
-    }
-    .createday {
-        font-size: 12px;
-        color: lightgray;
-        text-align:center;
-    }
 </style>
 <body>
-    <h1 class="myh1">自我介紹</h1>
+    <div class="header-createdate-bar">
+        <div class="large-centered">
+            <p>CrateDay:2025-04-22</p>
+        </div>
+    </div>
+    <div class="introducemyselfboder">
+        <div class="introducemyslefboder1">
+            <h1>自我介紹</h1>
+            <pre>
+                王侯將相
+                    寧有種呼
+            </pre>
+        </div>
+    </div>
+    <div class="photoview">
+        <img class="myphoto" src="./image/2.png" alt="photo">
+    </div>
+    
+    
     <table class="mytable">
         <tr>
             <td>姓名：</td>
@@ -51,6 +117,6 @@
             <td>🥘:牛肉湯、義式料理、水餃(韭菜)</td>
         </tr>
     </table>
-    <div class="createday">製作日期：205/04/21</div>
+    <div class="footer-bar">2025 版權所有 Akuma-Yu</div>
 </body>
 </html>
